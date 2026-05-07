@@ -116,13 +116,11 @@
 <body class="selection:bg-gold/30 selection:text-navy overflow-x-hidden">
 
   <!-- SEÇÃO 1: HERO SECTION -->
-  <!-- A classe hero-desktop-bg foi adicionada para aplicar o novo fundo apenas no Desktop -->
   <section class="relative bg-launch-gradient hero-desktop-bg text-white min-h-[95vh] flex items-center pt-24 pb-32 px-6 sm:px-12 lg:px-24 overflow-hidden isolate">
     <div class="absolute bottom-0 left-0 -z-10 -translate-x-1/4 translate-y-1/4 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px]"></div>
 
     <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
       
-      <!-- Bloco de Texto (Restaurado para col-span-8) -->
       <div class="lg:col-span-8">
         <div class="fade-up">
           <span class="inline-flex items-center space-x-2 text-gold-alt font-sans font-semibold tracking-[0.2em] text-xs sm:text-sm uppercase mb-6 bg-gold/10 px-4 py-2 rounded-full border border-gold/20">
@@ -130,7 +128,6 @@
           </span>
         </div>
         
-        <!-- Headline com o tamanho original restaurado -->
         <h1 class="fade-up delay-100 text-4xl sm:text-5xl lg:text-7xl leading-[1.1] mb-8 text-white font-serif tracking-tight">
           Saia da invisibilidade digital e transforme sua marca em uma <span class="text-gold-alt italic font-medium">referência</span> no mercado náutico.
         </h1>
@@ -192,8 +189,15 @@
   </section>
 
   <!-- SEÇÃO 3: A MUDANÇA DE PARADIGMA -->
-  <section class="py-24 sm:py-32 px-6 sm:px-12 lg:px-24 bg-launch-gradient text-white relative">
-    <div class="max-w-6xl mx-auto">
+  <!-- Adicionado overflow-hidden e relative para a bússola não transbordar da seção -->
+  <section class="py-24 sm:py-32 px-6 sm:px-12 lg:px-24 bg-launch-gradient text-white relative overflow-hidden isolate">
+    
+    <!-- Bússola espelhada na esquerda da Seção 3 -->
+    <div class="absolute top-1/2 left-0 -z-10 -translate-x-1/3 -translate-y-1/2 opacity-10 pointer-events-none">
+      <i data-lucide="compass" class="w-[800px] h-[800px] text-white stroke-[0.5] -scale-x-100"></i>
+    </div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div class="fade-right">
           <h2 class="text-3xl sm:text-5xl font-serif text-gold-alt mb-6 leading-tight">
@@ -554,11 +558,6 @@
 
   <!-- SEÇÃO 9: FINAL CTA & URGÊNCIA -->
   <section class="py-24 sm:py-32 px-6 sm:px-12 lg:px-24 bg-launch-gradient text-center relative overflow-hidden">
-    
-    <!-- Bússola espelhada na esquerda da última seção -->
-    <div class="absolute top-1/2 left-0 -z-10 -translate-x-1/3 -translate-y-1/2 opacity-10 pointer-events-none">
-      <i data-lucide="compass" class="w-[800px] h-[800px] text-white stroke-[0.5] -scale-x-100"></i>
-    </div>
 
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold/10 rounded-full blur-[150px] pointer-events-none"></div>
     
